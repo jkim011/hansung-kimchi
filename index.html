@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+
+    <style>
+        .banner {
+        position: relative;
+        max-width: 100%;
+        }
+
+        .banner img {
+        width: 110%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .banner-icon {
+        width: 350px;
+        height: auto;
+        position: absolute;
+        right: 115%;
+        top: -190%;
+        }
+
+        .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: 
+        translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        }
+
+        .banner-text h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        }
+
+        .banner-text p {
+        font-size: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .banner img {
+                transform: scale(1.2); /* Adjust the scale value to control the zoom level */
+            }
+
+            .banner-text h1 {
+                font-size: 36px;
+            }
+
+            .banner-text p {
+                font-size: 16px;
+            }
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 480px) {
+            .banner img {
+                transform: scale(1.5); /* Adjust the scale value to control the zoom level */
+            }
+
+            .banner-icon {
+            width: 70px;
+            top: -8%;
+            right: 100%
+            }
+
+            .banner-text h1 {
+                font-size: 24px;
+            }
+
+            .banner-text p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0805/5305/0421/files/test-banner-kimchi.jpg?v=1691000922">
+            <div class="banner-text">
+                <h1>Fresh Hand-Crafted Kimchi</h1>
+                <button>Shop now</button>
+                <div class="banner-icon" >
+                    <img src="https://cdn.shopify.com/s/files/1/0805/5305/0421/files/always-made-fresh.gif?v=1690913241"/>
+                </div>
+            </div>
+    </div>
+
+</body>
